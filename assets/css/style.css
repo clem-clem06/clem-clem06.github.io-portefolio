@@ -145,22 +145,28 @@ body {
 
 .hero {
     height: 70vh;
-    background: url("") center/cover; /* TODO : Pense à ajouter l'URL */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/fond.jpg");
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #ffffff;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 0.5rem;
 }
 
 .hero p {
-    font-size: 1.3rem;
-    margin-top: .5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #e0e0e0;
 }
 
 .about {
@@ -250,9 +256,7 @@ body {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     font-size: 1rem;
     transition: var(--transition);
-    margin-bottom: 1rem;
-    /* TODO : Conflit de margin-top détecté, choisis une valeur */
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-top: 1rem;
 }
 
