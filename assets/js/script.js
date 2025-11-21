@@ -1,37 +1,3 @@
-/* === SCRIPT.JS — Portfolio moderne === */
-
-// MENU BURGER
-document.addEventListener("DOMContentLoaded", () => {
-    const burger = document.getElementById("burger");
-    const menu = document.querySelector(".menu");
-
-    burger.addEventListener("click", () => {
-        menu.classList.toggle("visible");
-    });
-
-    document.addEventListener("click", (e) => {
-        if (!burger.contains(e.target) && !menu.contains(e.target)) {
-            menu.classList.remove("visible");
-        }
-    });
-});
-
-// DARK MODE
-const themeToggle = document.getElementById("theme-toggle");
-
-if (themeToggle) {
-    themeToggle.addEventListener("click", () => {
-        const current = document.documentElement.getAttribute("data-theme");
-        const newTheme = current === "dark" ? "light" : "dark";
-
-        document.documentElement.setAttribute("data-theme", newTheme);
-        localStorage.setItem("theme", newTheme);
-    });
-
-    const savedTheme = localStorage.getItem("theme") || "light";
-    document.documentElement.setAttribute("data-theme", savedTheme);
-}
-
 // SMOOTH SCROLL
 document.querySelectorAll("a[href^='#']").forEach(anchor => {
     anchor.addEventListener("click", function(e) {
