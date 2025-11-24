@@ -328,27 +328,67 @@ footer {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- RESPONSIVE --- */
+/* --- CSS POUR LE MOBILE ET LE BURGER --- */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1000;
+}
+
+.burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-text);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
 @media(max-width: 768px) {
-    .hero h1 { font-size: 2.5rem; }
-    
-    .menu {
-        display: none;
+
+    .hero h1 { 
+        font-size: 2.5rem; 
+    }
+
+    .burger-menu {
+        display: flex; 
+    }
+
+    /* Style du menu sur mobile (caché par défaut) */
+    nav .menu {
+        display: none; /* Reste caché tant qu'on ne clique pas */
+        position: absolute;
+        top: 100%; /* Juste sous le header */
+        left: 0;
+        width: 100%;
+        background-color: var(--color-bg);
+        flex-direction: column;
+        padding: 2rem 0;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        gap: 1.5rem;
+    }
+
+    /* Quand on ajoute la classe .active via JS, le menu s'affiche */
+    nav .menu.active {
+        display: flex;
+        animation: fadeIn 0.3s ease; /* Petit effet d'apparition */
     }
     
     .competences-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-}
 
-@media screen and (max-width: 480px) {
-    .competences-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .btn-primary {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 0.5rem;
+    /* --- RESPONSIVE --- */
+    @media screen and (max-width: 480px) {
+        .competences-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .btn-primary {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
     }
 }
