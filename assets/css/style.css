@@ -233,11 +233,11 @@ body {
     margin-top: 2.5rem;
 }
 
-#competences .competences {
+#Technologies_etudiees .competences {
     display: contents;
 }
 
-#competences .card {
+#Technologies_etudiees .card {
     background-color: var(--color-bg);
     display: flex;
     flex-direction: column;
@@ -249,13 +249,13 @@ body {
     border: 1px solid rgba(0,0,0,0.05);
 }
 
-#competences .card:hover {
+#Technologies_etudiees .card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-hover);
     border-color: transparent;
 }
 
-#competences .card img {
+#Technologies_etudiees .card img {
     height: 80px;
     width: auto;
     filter: grayscale(100%);
@@ -264,13 +264,13 @@ body {
     margin-bottom: 1.5rem;
 }
 
-#competences .card:hover img {
+#Technologies_etudiees .card:hover img {
     filter: grayscale(0);
     opacity: 1;
     transform: scale(1.1);
 }
 
-#competences .card h3 {
+#Technologies_etudiees .card h3 {
     font-size: 1.25rem;
     color: var(--color-text);
     font-weight: 600;
