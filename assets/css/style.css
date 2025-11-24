@@ -63,9 +63,29 @@ body {
 }
 
 .navbar {
+    width: 100%;
     max-width: 1200px;
-    margin: auto;
     padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navbar > a {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 80px;
+    width: auto;
+    display: block;
 }
 
 .menu {
@@ -348,18 +368,35 @@ footer {
 @media(max-width: 768px) {
 
     .hero h1 { 
-        font-size: 2.5rem; 
+        font-size: 2.5rem;
     }
 
     .burger-menu {
-        display: flex; 
+        display: flex;
+        order: -1;
     }
 
-    /* Style du menu sur mobile (caché par défaut) */
+    .navbar {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .navbar > a {
+        position: relative;
+        left: auto;
+        transform: none;
+        top: auto;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        margin-right: 25px;
+    }
+
+    /* Style du menu sur mobile */
     nav .menu {
-        display: none; /* Reste caché tant qu'on ne clique pas */
+        display: none;
         position: absolute;
-        top: 100%; /* Juste sous le header */
+        top: 100%;
         left: 0;
         width: 100%;
         background-color: var(--color-bg);
@@ -367,12 +404,12 @@ footer {
         padding: 2rem 0;
         box-shadow: 0 10px 10px rgba(0,0,0,0.1);
         gap: 1.5rem;
+        border-top: 1px solid rgba(0,0,0,0.05);
     }
 
-    /* Quand on ajoute la classe .active via JS, le menu s'affiche */
     nav .menu.active {
         display: flex;
-        animation: fadeIn 0.3s ease; /* Petit effet d'apparition */
+        animation: fadeIn 0.3s ease;
     }
     
     .competences-grid {
