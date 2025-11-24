@@ -288,6 +288,18 @@ body {
     font-style: italic;
 }
 
+/* --- TIMELINE (Formations) --- */
+.timeline .item .school {
+    color: var(--color-text-light);
+    font-style: italic;
+    margin-top: 0.2rem;
+    font-size: 0.95rem;
+}
+
+.timeline .item p strong {
+    color: var(--color-primary);
+}
+
 /* --- TIMELINE (Expériences) --- */
 .timeline {
     position: relative;
