@@ -44,11 +44,18 @@
         <div>
             <h2>À propos de moi</h2>
                 <p>
-                Passionné d’informatique depuis le collège et actuellement en deuxième année de BTS SIO option SLAM, je suis à la recherche d’une alternance pour ma prochaine année de licence ainsi que d’un stage du 5 janvier au 27 février afin de valider mon BTS. Mon objectif est d’approfondir mes compétences en développement et de mettre pleinement en pratique mes connaissances sur des projets concrets.
+                    Développeur en formation spécialisé dans les solutions logicielles (SLAM), je conçois des applications web et logicielles en mettant l'accent sur la fonctionnalité et l'expérience utilisateur. 
+                    <br><br>
+                    Actuellement en 2ème année de BTS SIO, je souhaite m'orienter vers une <strong>Licence professionnelle Développement Web/Mobile</strong> l'année prochaine. 
+                    <br><br>
+                    <strong>Mon objectif immédiat :</strong> Intégrer une équipe technique pour un <strong>stage de 8 semaines (du 5 janvier au 27 février)</strong> afin de valider mon diplôme et apporter mes compétences en <strong>PHP/Symfony ou React</strong> sur vos projets réels.
                 </p>
 
             <ul class="infos">
-                <p><strong>Email :<br></strong> clementjulien06.pro@gmail.com</p>
+                <p class="email-container">
+                    <strong>Email :<br></strong>
+                    <img src="assets/images/mail.png" alt="Adresse email de contact" class="email-img">
+                </p>
                 <p><strong>Localisation :<br></strong> Meslay-du-Maine</p>
                 <p><strong>Permis :<br></strong> B – Véhicule personnel</p>
                 <p><strong>Âge :<br></strong> 19 ans</p>
@@ -63,39 +70,47 @@
         <h2 class="text-center">Mes compétences</h2>
         <div class="competences-grid">
             <div class="competences">
+
+                        <article class="card">
+                            <img src="assets/images/php.jpg" alt="PHP">
+                            <h3>PHP</h3>
+                            <p class="level">Niveau : Avancé</p> <span class="tech-detail">Framework : Symfony</span>
+                        </article>
+
+                        <article class="card">
+                            <img src="assets/images/JS.png" alt="JavaScript">
+                            <h3>JavaScript</h3>
+                            <p class="level">Niveau : Maîtrisé</p> <span class="tech-detail">Framework : React</span>
+                        </article>
+
                         <article class="card">
                             <img src="assets/images/HTML.webp" alt="HTML">
                             <h3>HTML</h3>
+                            <p class="level">Niveau : Maîtrisé</p>
                         </article>
 
                         <article class="card">
                             <img src="assets/images/CSS.png" alt="CSS">
                             <h3>CSS</h3>
-                        </article>
-
-                        <article class="card">
-                            <img src="assets/images/JS.png" alt="Javscript">
-                            <h3>Javscript</h3>
-                        </article>
-
-                        <article class="card">
-                            <img src="assets/images/php.jpg" alt="PHP">
-                            <h3>PHP</h3>
+                            <p class="level">Niveau : Maîtrisé</p>
                         </article>
 
                         <article class="card">
                             <img src="assets/images/mysql.png" alt="MySQL">
                             <h3>MySQL</h3>
+                            <p class="level">Niveau : Intermédiaire</p>
                         </article>
 
                         <article class="card">
                             <img src="assets/images/Python.png" alt="Python">
                             <h3>Python</h3>
+                            <p class="level">Niveau : Intermédiaire</p>
                         </article>
 
                         <article class="card">
                             <img src="assets/images/C_sharp.jpg" alt="C sharp">
                             <h3>C sharp</h3>
+                            <p class="level">Niveau : Notions scolaires</p>
                         </article>
         </div>
     </section>
@@ -103,22 +118,67 @@
     <section id="experiences" class="container">
         <h2 class="text-center">Expériences professionnelles</h2>
         <div class="timeline">
-            <div class="item"><h3>Unité Centrale Laval</h3><span>Janv – Fév 2024</span></div>
-            <div class="item"><h3>IT Solution Laval</h3><span>Sept – Oct 2023</span></div>
-            <div class="item"><h3>Hexanet – Sargé-lès-le-Mans</h3><span>Mars – Avr 2023</span></div>
-            <div class="item"><h3>Electro System</h3><span>2022</span></div>
-            <div class="item"><h3>CoNext – Grasse</h3><span>Mai – Juin 2022</span></div>
+        
+        <div class="item">
+            <h3>Unité Centrale Laval</h3>
+            <span>Janv – Fév 2024</span>
+            <ul class="tasks">
+                <li>Diagnostic de pannes et réparations de premier niveau (hardware/software).</li>
+                <li>Préparation, masterisation et déploiement de postes clients (Windows 10/11).</li>
+                <li>Gestion et résolution des tickets d'incidents de niveau 1.</li>
+            </ul>
+        </div> 
+
+        <div class="item">
+            <h3>IT Solution Laval</h3>
+            <span>Sept – Oct 2023</span>
+            <ul class="tasks">
+                <li>Déploiement de l'infrastructure informatique dans les nouveaux locaux.</li>
+                <li>Installation, câblage et configuration des postes de travail.</li>
+                <li>Inventaire et gestion du stock de matériel.</li>
+            </ul>
         </div>
+
+        <div class="item">
+            <h3>Hexanet – Sargé-lès-le-Mans</h3>
+            <span>Mars – Avr 2023</span>
+            <ul class="tasks">
+                <li>Blanchiment de données (Wiping) et reconditionnement de disques durs.</li>
+                <li>Observation de l'administration d'un Datacenter et des infrastructures réseaux.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <h3>Electro System</h3>
+            <span>Sept – Déc 2022</span>
+            <ul class="tasks">
+                <li>Configuration et mise en service d'équipements informatiques.</li>
+                <li>Support technique et assistance aux utilisateurs.</li>
+                <li>Réinstallation de systèmes d'exploitation et de logiciels standards.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <h3>CoNext – Grasse</h3>
+            <span>Mai – Juin 2022</span>
+            <ul class="tasks">
+                <li>Participation au transfert de l'infrastructure vers le nouveau site.</li>
+                <li>Installation et configuration de systèmes Linux (notamment Debian).</li>
+                <li>Traitement des demandes d'assistance de premier niveau.</li>
+            </ul>
+        </div>
+
+    </div>
     </section>
 
         <section id="projets" class="container">
     <h2 class="text-center">Mes projets</h2>
     <div class="projets-grid">
-        <article class="project-card" data-description="Projet de BTS qui est compose d'une application legére et d'une application lourde">Work Together</article>
+        <article class="project-card" data-description="Projet de BTS qui est composé d'une application légère et d'une application lourde">Work Together</article>
         <div class="project-details hidden"></div>
-        <article class="project-card" data-description="Mini site en PHP qui propose des questions personalise en fonction des réponses aux autres questions et envoie un mail automatique avec des conseils personalises">Stage 1ère année</article>
+        <article class="project-card" data-description="Mini site en PHP qui propose des questions personnalisées en fonction des réponses aux autres questions et envoie un mail automatique avec des conseils personnalisés">Stage 1ère année</article>
         <div class="project-details hidden"></div>
-        <!--<article class="project-card" data-description="Projet personnel mêlant design et données sportives, permettant de consulter résultats, classements et statistiques détaillées des courses automobiles.">Overtake</article>-->
+        <!--<article class="project-card" data-description="Projet personnel mêlant design et données sportives, permettant de consulter les résultats, les classements et les statistiques détaillées des courses automobiles.">Overtake</article>-->
         <div class="project-details hidden"></div>
     </div>
 </section>
@@ -127,4 +187,5 @@
         <p>© 2025 – Portfolio de Clément JULIEN</p>
     </footer>
 </body>
+
 </html>
