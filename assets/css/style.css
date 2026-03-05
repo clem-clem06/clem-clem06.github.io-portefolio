@@ -138,6 +138,7 @@ body {
     box-shadow: 0 4px 6px -1px rgba(0, 31, 84, 0.2);
     transition: var(--transition);
     border: 2px solid transparent;
+    text-align: center;
 }
 
 .btn-primary:hover {
@@ -483,4 +484,24 @@ footer {
             margin-bottom: 0.5rem;
         }
     }
+
+    /* Le nouveau design du bouton retour, élégant et bien placé */
+        .btn-retour {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background-color: var(--secondary); /* Utilise ton gris secondaire */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        
+        .btn-retour:hover {
+            background-color: var(--dark);
+            color: white;
+            transform: translateX(-5px); /* Petit effet dynamique au survol vers la gauche */
+        }
 }
