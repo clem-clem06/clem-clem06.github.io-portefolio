@@ -130,6 +130,7 @@ body {
 .btn-primary {
     background: var(--color-primary);
     color: white;
+    font-family: sans-serif;
     padding: 0.8rem 2rem;
     border-radius: 50px;
     text-decoration: none;
@@ -145,6 +146,11 @@ body {
     background: var(--color-primary-light);
     transform: translateY(-2px);
     box-shadow: 0 10px 15px -3px rgba(0, 31, 84, 0.3);
+}
+
+.about .btn-primary {
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 /* --- HERO SECTION --- */
